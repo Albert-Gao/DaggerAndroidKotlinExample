@@ -5,16 +5,22 @@ import dagger.Module
 import dagger.Provides
 
 @Module
-class MainActivityModule {
+abstract class MainActivityModule {
+    
+    @Module
+    companion object {
 
-    @Provides
-    fun provideABCKey(
-        preference:SharedPreferences
-    ):BooleanKey {
-        return BooleanKey(
-            name = "abc",
-            value = preference.getBoolean("abc", false)
-        )
+        @JvmStatic
+        @Provides
+        fun provideABCKey(
+            preference:SharedPreferences
+        ):BooleanKey {
+            return BooleanKey(
+                name = "abc",
+                value = preference.getBoolean("abc", false)
+            )
+        }
+
     }
 
 }
