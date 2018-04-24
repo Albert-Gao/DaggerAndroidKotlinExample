@@ -8,17 +8,13 @@
 
 ## How to setup `dagger-android`
 
-- A minimal setup for using `dagger-android` with Kotlin to setup application wide and activity wide dependencies can be found in the master branch.
-- Check my [blog](http://www.albertgao.xyz/2018/04/18/dependency-injection-on-android-with-dagger-android-and-kotlin/) for more details
-
-## About test
-
-- See the `withTest` branch to see how to mock in the `Espresso` `instrumented test`.
+- Check the [`master`](https://github.com/Albert-Gao/DaggerAndroidKotlinExample/tree/master) branch
+- A minimal setup for using `dagger-android` with Kotlin to setup application wide and activity wide dependencies.
 - Check my [blog](http://www.albertgao.xyz/2018/04/18/dependency-injection-on-android-with-dagger-android-and-kotlin/) for more details
 
 ## A good start
 
-**If you feel this setup is overwhelming, do check the below one with plain dagger, should be much simpler:**
+**If you feel this setup is overwhelming, do check the below one with plain dagger 2, should be much simpler:**
 
 - [repo](https://github.com/Albert-Gao/PlainDaggerKotlinAndroid)
 - [blog](http://www.albertgao.xyz/2018/04/17/dependency-injection-on-android-using-dagger-and-kotlin-in-minutes/)
