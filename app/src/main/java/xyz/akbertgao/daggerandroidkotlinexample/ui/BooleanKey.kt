@@ -1,6 +1,6 @@
 package xyz.akbertgao.daggerandroidkotlinexample.ui
 
 class BooleanKey(
-    val name: String,
+    var name: String,
     val value: Boolean
 )

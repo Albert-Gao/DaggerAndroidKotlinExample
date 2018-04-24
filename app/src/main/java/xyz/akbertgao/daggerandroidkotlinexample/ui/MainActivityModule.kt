@@ -14,12 +14,10 @@ abstract class MainActivityModule {
         @Provides
         fun provideABCKey(
             preference:SharedPreferences
-        ):BooleanKey {
-            return BooleanKey(
-                name = "abc",
-                value = preference.getBoolean("abc", false)
-            )
-        }
+        ):BooleanKey = BooleanKey(
+            name = "abc",
+            value = preference.getBoolean("abc", false)
+        )
 
     }
 

@@ -2,6 +2,7 @@ package xyz.akbertgao.daggerandroidkotlinexample.ui
 
 import android.content.SharedPreferences
 import android.os.Bundle
+import android.widget.TextView
 import dagger.android.support.DaggerAppCompatActivity
 import xyz.akbertgao.daggerandroidkotlinexample.R
 import javax.inject.Inject
@@ -20,5 +21,7 @@ class MainActivity : DaggerAppCompatActivity() {
 
         println("Is abc in Preferences: ${preferences.contains("abc")}")
         println("value of abcKey: ${abcKey.value}")
+
+        findViewById<TextView>(R.id.my_text_view).text = abcKey.name
     }
 }

@@ -11,7 +11,9 @@ android {
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        // testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner 'com.github.tmurakami.dexopener.DexOpenerAndroidJUnitRunner'
+
     }
     buildTypes {
         release {
@@ -30,8 +32,21 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
+    /* Mockito */
+    androidTestImplementation "org.mockito:mockito-android:2.18.3"
+    androidTestImplementation 'com.github.tmurakami:dexopener:0.12.1'
+
+    /* Dagger */
     kapt 'com.google.dagger:dagger-compiler:2.15'
-    implementation 'com.google.dagger:dagger-android:2.15'
     kapt 'com.google.dagger:dagger-android-processor:2.15'
+    implementation 'com.google.dagger:dagger-android:2.15'
     implementation 'com.google.dagger:dagger-android-support:2.15'
+    kaptAndroidTest 'com.google.dagger:dagger-compiler:2.15'
+    kaptAndroidTest 'com.google.dagger:dagger-android-processor:2.15'
+
+    /* Dagger mock */
+    testImplementation 'com.github.fabioCollini.daggermock:daggermock:0.8.4'
+    testImplementation 'com.github.fabioCollini.daggermock:daggermock-kotlin:0.8.4'
+    androidTestImplementation 'com.github.fabioCollini.daggermock:daggermock:0.8.4'
+    androidTestImplementation 'com.github.fabioCollini.daggermock:daggermock-kotlin:0.8.4'
 }
