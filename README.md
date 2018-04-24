@@ -15,7 +15,7 @@
 
 ## A good start
 
-**If you feel this setup is overwhelming, do check the below one with plain dagger, should be much simpler:**
+**If you feel this setup is overwhelming, do check the below one with plain dagger 2, should be much simpler:**
 
 - [repo](https://github.com/Albert-Gao/PlainDaggerKotlinAndroid)
 - [blog](http://www.albertgao.xyz/2018/04/17/dependency-injection-on-android-using-dagger-and-kotlin-in-minutes/)
